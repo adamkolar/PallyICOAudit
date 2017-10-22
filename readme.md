@@ -1,4 +1,4 @@
-# Description
+# Pally ICO Audit
 The purpose of the contracts is to distribute tokens of the Pally platform in accordence with the terms delared on the projects' website: https://www.pally.co/
 
 # Audited contracts
