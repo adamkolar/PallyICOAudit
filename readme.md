@@ -212,7 +212,7 @@ To my best knowledge, the code can be left as is, but I would recommend removing
 In case weiNextTier in **calculateExcesTokens** function is larger than next limitTier[next tier number]/rateTier[next tier number] it is possible to buy tokens from higher tier for lower tier price.
 
 ### Recommendations
-Simplest fix would be to revert at the end of **calculateTokensTier** function if calculatedTokens exceeds limitTier[tier number]. However, considering the maximum amount of ETH contribution in one transaction is limited to 1000 ETH and with the current price of ETH in mind and declared dollar price of tokens the total price of tokens in the cheapest tier should be over 3000 ETH, this vulnerability shouldn't be explitable.
+Simplest fix would be to revert at the end of **calculateTokensTier** function if calculatedTokens exceeds limitTier[tier number]. However, considering the maximum amount of ETH contribution in one transaction is limited to 1000 ETH and with the current price of ETH in mind and declared dollar price of tokens, the total price of tokens in the cheapest tier should be over 3000 ETH, this vulnerability shouldn't be exploitable.
 
 ## 7. Misc
 - variable limitTier4 is never used
