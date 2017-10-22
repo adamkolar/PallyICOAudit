@@ -33,6 +33,8 @@ Below is the list of explicit and implicit aims of the audited code, checkmarks 
 
 ## 1. Owner can change crowdsale address in the token contract at any time 
 
+first pointed out by: https://www.reddit.com/r/ethdev/comments/75k46s/up_to_10_eth_for_finding_vulnerabilities_pallyco/do80pbi/
+
 ### PallyCoin.sol / lines 44-50
 ```javascript
    /// @notice Function to set the crowdsale smart contract's address only by the owner of this token
@@ -52,6 +54,8 @@ either/or
 
 
 ## 2. Due to ordering error, presale token limit can be overstepped by arbitrary amount
+
+first pointed out by: https://www.reddit.com/r/ethdev/comments/75k46s/up_to_10_eth_for_finding_vulnerabilities_pallyco/do7hjvo/
 
 ### PallyCoin.sol / lines 59 - 62
 ```javascript
