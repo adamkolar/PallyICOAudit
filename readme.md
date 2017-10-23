@@ -145,7 +145,7 @@ either/or
    }
 ```
 ### Problems
-1) Function is defined as constant but contains msg.sender.transfer, which is not allowed, luckilly this is practicallye a non-issue because of the problem 2)
+1) Function is defined as constant but contains msg.sender.transfer, which is not allowed, luckilly this is practically a non-issue because of the problem 2)
 2) Function is never called from inside the contract with the tierSelected = 4, which means code path that begins on the line 324 is effectively dead and never used, it can be called with this argument from outside, but that call allways results in error due to the attempt to transfer inside a constant function
 3) Comment on the line 328 betrays misunderstanding of best coding practices, it is true that external calls should be executed last in order to prevent re-entrancy attacks, but they should be at the end of the whole code execution, putting them at the end of a function that is called in the middle of another function negates the security practice.
 
